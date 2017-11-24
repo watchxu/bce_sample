@@ -284,8 +284,8 @@ class IAMSignatureError(IAMError):
 
 if __name__ == '__main__':
     headers={}
-    accesskey='758903b8f51549eda94bbb5fc5e390d3'
-    secretkey='82ddfbe1304d46799b16debd5b562ace'
+    accesskey='xxxxx'
+    secretkey='xxxxx'
     headers['x-bce-date'] = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
     headers['Content-Type'] = 'application/json'
     headers['Host'] = 'lss.bj.baidubce.com'
