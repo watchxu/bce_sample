@@ -289,8 +289,8 @@ class IAMSignatureError(IAMError):
 
 if __name__ == '__main__':
     headers={}
-    accesskey='758903b8f51549eda94bbb5fc5e390d3'
-    secretkey='82ddfbe1304d46799b16debd5b562ace'
+    accesskey='xxxxx'
+    secretkey='xxxxx'
     headers['x-bce-date'] = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
     headers['Content-Type'] = 'application/json'
     headers['Host'] = 'bcd.baidubce.com'
@@ -312,7 +312,7 @@ if __name__ == '__main__':
       'rdType': 'A',
       'ttl':600,
       'rdata': '1.1.1.1',
-      'zoneName':'watchslowly.com'
+      'zoneName':'baidu.com'
     }
 
     url = 'http://bcd.baidubce.com/v1/domain/resolve/add'
