@@ -51,7 +51,7 @@ class userPass {
     }
 }
 $obj = new userPass();
-$result = $obj->aes128WithFirst16Char("baidu@123","456409ff56a84f78af91c15c0b1fd6ba");
+$result = $obj->aes128WithFirst16Char("baidu@123","456409ff56a84f78af91c15c0b1fd6ba");  //前面是需要修改的秘密，后面是百度云中的sk
 
 $body = array(
 	"adminPass" =>"$result"
