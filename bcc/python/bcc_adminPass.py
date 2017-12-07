@@ -293,10 +293,10 @@ unpad = lambda s : s[0:-ord(s[-1])]
 
 #key = os.urandom(16) # the length can be (16, 24, 32)
 #text = 'to be encrypted'
-key = '82ddfbe1304d4679' # the length can be (16, 24, 32)
+key = '82ddfbe1304d4679' # 百度云SK前16位
 #text = '1234567890123456'
 #text = '1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890'
-text = 'baidu@2017'
+text = 'baidu@2017'  #设置的密码
 
 cipher = AES.new(key)
 
@@ -332,7 +332,7 @@ if __name__ == '__main__':
 
     request = {
         'method': 'PUT',
-        'uri': '/v2/instance/i-ULNUJVBj',
+        'uri': '/v2/instance/i-ULNUJVBj', #需要重置密码的实例id
         'params': query_params,
         'headers': headers
     }
