@@ -255,32 +255,7 @@ class IAMError(Exception):
         super(IAMError, self).__init__(self.message)
 
 
-class IAMHeaderError(IAMError):
-    """
-    IAM Header errors
-    """
-    pass
 
-
-class IAMMethodError(IAMError):
-    """
-    IAM Method errors
-    """
-    pass
-
-
-class IAMURIError(IAMError):
-    """
-    IAM URI errors
-    """
-    pass
-
-
-class IAMSignatureError(IAMError):
-    """
-    IAM Signature errors
-    """
-    pass
 
 if __name__ == '__main__':
     headers={}
