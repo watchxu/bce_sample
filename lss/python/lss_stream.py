@@ -255,32 +255,7 @@ class IAMError(Exception):
         super(IAMError, self).__init__(self.message)
 
 
-class IAMHeaderError(IAMError):
-    """
-    IAM Header errors
-    """
-    pass
 
-
-class IAMMethodError(IAMError):
-    """
-    IAM Method errors
-    """
-    pass
-
-
-class IAMURIError(IAMError):
-    """
-    IAM URI errors
-    """
-    pass
-
-
-class IAMSignatureError(IAMError):
-    """
-    IAM Signature errors
-    """
-    pass
 
 if __name__ == '__main__':
     headers={}
@@ -294,7 +269,7 @@ if __name__ == '__main__':
      
     request = {
         'method': 'GET',
-        'uri': '/v5/domain/rtmp.watchslowly.com/app/baidu/stream/test',
+        'uri': '/v5/domain/<播放域名>/app/baidu/stream/test',
         'headers': headers
     }
     signer = BceSigner(accesskey, secretkey)
@@ -303,7 +278,7 @@ if __name__ == '__main__':
     #print (headers)
 
 
-    url = 'http://lss.bj.baidubce.com/v5/domain/rtmp.watchslowly.com/app/baidu/stream/test'
+    url = 'http://lss.bj.baidubce.com/v5/domain/<播放域名>/app/baidu/stream/test'
     response = requests.request("GET", url, headers=headers)
     print auth
     print response.text
