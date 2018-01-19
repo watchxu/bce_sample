@@ -264,7 +264,7 @@ if __name__ == '__main__':
     headers['x-bce-date'] = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
     headers['Content-Type'] = 'application/json'
     headers['Host'] = 'bcc.bj.baidubce.com'
-    headers['Expect'] = '100-continue'
+    
 
     query_params = {
         'rebuild': ''
