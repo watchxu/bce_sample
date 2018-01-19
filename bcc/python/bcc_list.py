@@ -255,32 +255,6 @@ class IAMError(Exception):
         super(IAMError, self).__init__(self.message)
 
 
-class IAMHeaderError(IAMError):
-    """
-    IAM Header errors
-    """
-    pass
-
-
-class IAMMethodError(IAMError):
-    """
-    IAM Method errors
-    """
-    pass
-
-
-class IAMURIError(IAMError):
-    """
-    IAM URI errors
-    """
-    pass
-
-
-class IAMSignatureError(IAMError):
-    """
-    IAM Signature errors
-    """
-    pass
 
 if __name__ == '__main__':
     headers={}
@@ -289,7 +263,7 @@ if __name__ == '__main__':
     headers['x-bce-date'] = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
     headers['Content-Type'] = 'application/json'
     headers['Host'] = 'bcc.bj.baidubce.com'
-    headers['Expect'] = '100-continue'
+    
 
     query_params = {
          'marker': 'i-pE5gpKBh',
