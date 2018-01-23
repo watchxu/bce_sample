@@ -260,8 +260,8 @@ class IAMError(Exception):
 
 if __name__ == '__main__':
     headers={}
-    accesskey='758903b8f51549eda94bbb5fc5e390d3'
-    secretkey='82ddfbe1304d46799b16debd5b562ace'
+    accesskey=''
+    secretkey=''
     headers['x-bce-date'] = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
     headers['Content-Type'] = 'application/x-www-form-urlencoded'
     headers['Host'] = 'aip.baidubce.com'
