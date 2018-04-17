@@ -292,7 +292,7 @@ if __name__ == '__main__':
     }
 
 
-    url = "http://cdn.baidubce.com/v2/domain/watchslowly.com/config?cacheTTL"
+    url = "http://cdn.baidubce.com/v2/domain/watchslowly.com/config"
     response = requests.request("PUT", url, headers=headers, params=query_params, data=json.dumps(body))
 
     print response.text
